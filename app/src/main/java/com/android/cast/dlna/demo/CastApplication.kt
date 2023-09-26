@@ -26,7 +26,8 @@ const val castVideoM3u8Url = "https://devstreaming-cdn.apple.com/videos/streamin
 
 //const val castVideoM3u8Url_480x270 = "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/v2/prog_index.m3u8"
 const val castVideoM3u8Url_960x540 = "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/v5/prog_index.m3u8"
-const val castVideoM3u8Url_1920x1080 = "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/v9/prog_index.m3u8"
+//const val castVideoM3u8Url_1920x1080 = "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/v9/prog_index.m3u8"
+const val castVideoM3u8Url_1920x1080 = "http://mode95420.cdngold.me:80/68fc652696/d24231d01f/325025"
 
 data class VideoUrl(val url: String, val title: String)
 
@@ -36,7 +37,7 @@ val videoUrlList = mutableListOf(
     VideoUrl(castVideoMp4Url_10min, "10 minute long video(mp4)"),
     VideoUrl(castVideoM3u8Url, "Standard Apple test flow m3u8 - multiple code rates"),
     VideoUrl(castVideoM3u8Url_960x540, "Standard Apple test flow(m3u8)-960x540"),
-    VideoUrl(castVideoM3u8Url_1920x1080, "Standard Apple test flow(m3u8)-1920x1080"),
+    VideoUrl(castVideoM3u8Url_1920x1080, "Sample link from Ibox IPTV"),
 )
 
 internal fun AppCompatActivity.replace(id: Int, fragment: Fragment) {
